@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your time to help us</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name</label>
+        <input
+          placeholder="Enter your name"
+          required
+          name="name"
+          id="name"
+          type="text"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label">Email</label>
+        <input
+          placeholder="Enter your email"
+          required
+          name="email"
+          id="email"
+          type="email"
+        />
+        <!-- pattern="[a-zA-Z0-9]+@[a-z0-9]+\.[a-z]+" -->
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">ID number (optional)</label>
+        <input
+          placeholder="ID number"
+          min="1"
+          max="1000"
+          name="number"
+          id="number"
+          type="number"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Please mark your gender</legend>
+        <input checked id="male" name="gender" type="radio" value="male" />
+        <label for="male">Male</label>
+
+        <input id="female" name="gender" type="radio" value="female" />
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What do you like the most in our school?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="">(please select)</option>
+          <option value="education">Education</option>
+          <option value="environment">Environment</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Please mark your favorite subjects</legend>
+        <input type="checkbox" value="math" id="math" />
+        <label for="math">Math</label>
+
+        <input type="checkbox" value="physics" id="physics" />
+        <label for="physics">Physics</label>
+
+        <input type="checkbox" value="chemistry" id="chemistry" />
+        <label for="chemistry">Chemistry</label>
+
+        <input
+          type="checkbox"
+          value="foreign languages"
+          id="foreign languages"
+        />
+        <label for="foreign languages">Foreign languages</label>
+
+        <input type="checkbox" value="literature" id="literature" />
+        <label for="literature">Literature</label>
+
+        <input
+          type="checkbox"
+          value="information technology"
+          id="information technology"
+        />
+        <label for="information technology">Information technology</label>
+
+        <input type="checkbox" value="economics" id="economics" />
+        <label for="economics">Economics</label>
+
+        <input type="checkbox" value="politics" id="politics" />
+        <label for="politics">Politics</label>
+
+        <input type="checkbox" value="marketing" id="marketing" />
+        <label for="marketing">Marketing</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea
+          name="comment"
+          id="comments"
+          placeholder="Enter your comment here..."
+          rows="5"
+          cols="30"
+        ></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
