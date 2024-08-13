@@ -17,9 +17,9 @@
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
-          <li><a href="#student-info">INFO</a></li>
-          <li><a href="#html-questions">HTML</a></li>
-          <li><a href="#css-questions">CSS</a></li>
+          <li><a accesskey="i" href="#student-info">INFO</a></li>
+          <li><a accesskey="h" href="#html-questions">HTML</a></li>
+          <li><a accesskey="c" href="#css-questions">CSS</a></li>
         </ul>
       </nav>
     </header>
@@ -30,14 +30,112 @@
       >
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="info">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="emial" />
+          </div>
+          <div class="info">
+            <label for="date-of-birth">Date of Birth</label>
+            <input id="date-of-birth" type="date" name="date-of-birth" />
+          </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML Questions</h2>
+          <div class="question-block">
+            <h3>
+              <span class="sr-only">Question</span>
+              1
+            </h3>
+            <fieldset class="question" name="q1-fieldset">
+              <legend>Are you male?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input id="q1-a1" name="male" type="radio" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input id="q1-a2" name="male" type="radio" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3>
+              <span class="sr-only">Question</span>
+              2
+            </h3>
+            <fieldset class="question" name="q2-fieldset">
+              <legend>Your age not less than 18?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input
+                      id="q2-a1"
+                      name="not-less-than-18"
+                      type="radio"
+                      value="true"
+                    />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input
+                      id="q2-a2"
+                      name="not-less-than-18"
+                      type="radio"
+                      value="false"
+                    />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS Questions</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="qa1"
+                >How to target p elements to style them in CSS?</label
+              >
+            </div>
+            <div class="answer">
+              <select id="qa1" required name="qa1">
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="qa2">How to target "answer" class in CSS?</label>
+            </div>
+            <div class="answer">
+              <textarea name="qa2" id="qa2" rows="5" cols="30"></textarea>
+            </div>
+          </div>
         </section>
+        <button type="submit" value="Send">Send</button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a>
+        <br />
+        San Francisco <br />
+        California <br />
+        USA
+      </address>
+    </footer>
   </body>
 </html>
