@@ -1,0 +1,17 @@
+@media only screen and (max-width: 300px) {
+
+}
+
+
+
+#welcome-section {
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    line-height: 2rem;
+}
+
